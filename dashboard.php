@@ -100,6 +100,7 @@ $logs = load_logs(); // Function to load logs from logs.txt
 // Process logs to get statistics
 $link_stats = [];
 $ip_request_counts = [];
+$country_request_counts = [];
 foreach ($logs as $log) {
     $short_code = $log['short_code'];
     if (!isset($link_stats[$short_code])) {
